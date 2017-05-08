@@ -21,9 +21,12 @@ int main(){ //main function
      bool found;    //setting boolean to found
      char choice;
 
-     //The For loop statement: setting the varable 'i' with 10 loops and with each loop add to it itself
+     //The For loop statement: setting the varable 'i' to zero with 10 loop until 'i' add up to 10
      for(i = 0; i < 10; i++){
-          arr[i] = rand() % 40 + 60;
+          arr[i] = rand() % 40 + 60; //for each new 'i' from the for statement above will save in each array element
+          //rand() is to generate a random number. % 40 means the set range of number; example 0-39 thats 40 number ranger
+          //+60 is the starting position. So starting at 60 with 40 number in between will yeild 60-100
+          //the random generator will only pick numbera in those range of 60 to 100
 }
 
 cout << "The Random Generated Array Is: "; //console print out on the screen
